@@ -1,0 +1,111 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+}
+.container-sub{
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 5px 5px 25px hsl(215, 50%, 10%);
+    border-radius: 10px;
+    margin: 2rem 1rem;
+    padding: 20px;
+    height: 500px;
+}
+.img-top{
+    overflow:hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.img-top img{
+    width: 100%;
+    display: block;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.2);
+    display: none;
+    cursor: pointer;
+}
+.overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-top:hover .overlay{
+    display: block;
+}
+.text-title{
+    margin: 10px 0;
+}
+.text-title a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.text-title a:hover{
+    color: hsla(178, 100%, 50%);
+}
+.text-title p{
+    margin: 12px 0 ;
+}
+.text-sub{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.text-num, .clock{
+    display: flex;
+    align-items: center;
+    
+}
+.text-num p{
+    font-weight: 600;
+    padding-left: 10px;
+    color: hsla(178, 100%, 50%);
+}
+.clock p{
+    padding-left: 10px;
+}
+
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+    margin: 5px 0;
+}
+.creation{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 15px 0;
+
+}
+.creation img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 30px;
+}
+.creation p{
+    margin: 0 20px;
+}
+
+.creation a{
+    text-decoration: none;
+    color: white;
+}
+.creation a:hover{
+    color: hsla(178, 100%, 50%);
+}
